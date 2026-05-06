@@ -1,5 +1,7 @@
 <html>
     <body>
-    <h1>ini adalah tampilan yang menggunakan bleade  template<h1>
+    <h1>Hello{{$nama}}</h>
+    <h1>Ini adalah tampilan yang 
+        menggunakan blade  template</h1>
     </body>
-</html>
+</html> 

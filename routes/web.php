@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\landingPageController;
+use App\Http\Controllers\PendaftaranController;
 
-Route::get('/', [LandingPageController::class, 'index']); 
+// PENDAFTARAN
+Route::get('/daftar', [PendaftaranController::class, 'daftar']);
+Route::post('/daftar', [PendaftaranController::class, 'hasilDaftar']);
+
+// ASPIRASI
+Route::get('/aspirasi', [PendaftaranController::class, 'aspirasi']);
+Route::post('/aspirasi', [PendaftaranController::class, 'hasilAspirasi']);
